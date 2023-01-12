@@ -38,6 +38,8 @@ pool <- dbPool(
 dbtable = "THE TABLE YOU WANT TO STORE QUIZ/EXERCISE DATA IN FOR THIS MODULE"
 ################################################################################
 
+## The rest of this chunk does not need to be changed
+
 select_query = paste("SELECT * FROM", dbtable)
 
 ## Global options
@@ -47,7 +49,8 @@ tutorial_options(exercise.eval = FALSE, exercise.checker=FALSE)
 ## Recording data to database
 new_recorder <- function(tutorial_id, tutorial_version, user_id, event, data) {
     cat(user_id, ", ", event, ",", data$label, ", ", data$answer, ", ", data$correct, "\n", sep = "", append = TRUE)
-  
+
+## This determines which user data is collected  
 d_tibble <- tibble::tibble(
 user_id  = user_id, 
 event = event,
@@ -57,8 +60,8 @@ question = data$question,
 answer = data$answer
   )
 
-## send to mysql
-dbWriteTable(pool, "testing", d_tibble, append=TRUE, row.names = FALSE)}
+## Send recorded data to the database
+dbWriteTable(pool, dbtable, d_tibble, append=TRUE, row.names = FALSE)}
 
 options(tutorial.event_recorder = new_recorder)
 
