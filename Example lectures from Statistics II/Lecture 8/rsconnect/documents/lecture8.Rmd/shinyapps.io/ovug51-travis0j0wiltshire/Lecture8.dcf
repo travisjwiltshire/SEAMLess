@@ -1,0 +1,14 @@
+name: Lecture8
+title: Lecture8
+username:
+account: ovug51-travis0j0wiltshire
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7412249
+bundleId: 6439045
+url: https://travisjwiltshire.shinyapps.io/Lecture8/
+when: 1666702937.54871
+lastSyncTime: 1666702937.54871
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Lecture 8 log.docx|lecture8_files/figure-html/Quiz1R-1.png|lecture8_files/figure-html/Quiz2R-1.png|lecture8_files/figure-html/Quiz3R-1.png|lecture8_files/figure-html/Quiz4R-1.png|lecture8_files/figure-html/Quiz5R-1.png

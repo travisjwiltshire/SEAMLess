@@ -1,0 +1,13 @@
+name: lecture9
+title: lecture9
+username:
+account: ovug51-travis0j0wiltshire
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7482678
+bundleId: 6462772
+url: https://travisjwiltshire.shinyapps.io/lecture9/
+when: 1667295289.76967
+lastSyncTime: 1667295289.76967
+asMultiple: FALSE
+asStatic: FALSE
