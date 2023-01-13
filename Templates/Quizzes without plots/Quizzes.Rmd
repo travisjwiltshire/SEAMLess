@@ -380,7 +380,7 @@ question("The slope of a regression line can be:",
 
 ### Question 1
 
-```{r Quiz4_1,  echo=FALSE}
+```{r Quiz7_1,  echo=FALSE}
 question("When performing regression with a dummy coded categorical variable, the output for the $b$ coefficient is always relative to which of the following?",
     answer("Intercept"),
     answer("Values of x"),
@@ -393,7 +393,7 @@ question("When performing regression with a dummy coded categorical variable, th
 
 
 ### Question 2
-```{r Quiz4_2,  echo=FALSE}
+```{r Quiz7_2,  echo=FALSE}
   question("Which of the following are assumptions of simple linear regression?",
     answer("Heteroscedasticity"),
     answer("Homoscedasticity", correct = TRUE),
@@ -406,7 +406,7 @@ question("When performing regression with a dummy coded categorical variable, th
 
 ### Question 3
 
-```{r Quiz4_3,  echo=FALSE}
+```{r Quiz7_3,  echo=FALSE}
  question("In multiple regression, what is it called when two predictor variables may be highly correlated",
     answer("Redundant"),
     answer("Biased"),
