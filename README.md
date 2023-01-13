@@ -16,4 +16,4 @@ Note that any template files including plots are made for online deployment, as 
 
 ## Privacy
 
-Although this project runs online, no logins are required and no identifying info is collected from the users. The only data that are saved are anonymized labels for when exercises are attempted or submitted and which answer options are selected from quizzes. This data can not be connected to the user or their IP in any way.
+Although this project runs online, no logins are required and no identifying information is collected from the users. The only data that are saved are anonymized labels for when exercises are attempted or submitted and which answer options are selected from quizzes. These labels can not be connected to the user or their IP address in any way.
