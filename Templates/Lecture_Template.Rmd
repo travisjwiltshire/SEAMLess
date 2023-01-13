@@ -1,0 +1,189 @@
+---
+title: "Lecture Title" # Your title here!
+author: Your Name # Your name here!
+output: 
+  learnr::tutorial:
+    progressive: true # Do you want exercises to appear in chunks? Replace "true" with "false" if you want them to appear all at once
+    allow_skip: true # Do you want exercises to be skippable? Replace "true" with "false" if you do not
+    theme: "paper"
+    css: css/style.css
+runtime: shiny_prerendered
+---
+
+
+```{r setup, include=FALSE}
+### THIS IS THE GLOBAL SETUP CHUNK - IT WILL NOT BE VISIBLE TO STUDENTS ####
+
+## Insert the libraries you use here
+require(learnr)
+
+
+## Pre-load data for exercises here
+pop<-base::letters[1:10]
+samp2<-sample(pop,size=4,replace=TRUE)
+```
+
+## Introduction
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("images/banner.png")  
+
+### You can insert an image/banner for your lecture here. If not needed, you can detele this chunk
+```
+
+Write your lecture introduction text here
+
+## 1. Menu Item
+
+Think about how you want to structure your lecture, the headings starting with "##" will appear as a menu item in the navigation bard on the left side.
+
+### 1.1. Sub-section
+
+To reduce the amount of linked menu items, use "###" headings for sub-sections. These will not be linked but will be treated as separate chunks you can load with "continue" if you chose "progressive: true" in the header of this document. Otherwise, they will just be normal headings that are all loaded at once (but still not linked in the sidebar). 
+
+
+### 1.2. Sub-section
+
+You can have as many sub-sections as you want. Either text or code chunks can go here.
+
+## 2. Menu Item
+
+You can also have as many menu items as you want, although it will appear cluttered at some point. 
+
+### 2.1. Quiz Section
+
+In your sections or sub-sections, in addition to text you can have quizzes, plots, code chunks or exercises. Here is an example quiz:
+
+```{r Quiz1,  echo=FALSE} 
+## See where I have "Quiz1" above this line? Make sure this is a unique label for each code chunk. You can do this by numbering for example.
+## It's not visible for students - just needed for RMarkdown formatting
+
+question("Your question here", ## YOUR QUESTION HERE
+    answer("Correct Answer", correct = TRUE), # WRITE correct = TRUE after the right answer(s) (you can do this for multiple answers too)
+    answer("Wrong Option 1"), # YOUR ANSWER OPTIONS HERE (you can have as many as you want)
+    answer("Wrong Option 2"),
+    answer("Wrong Option 3"),
+    incorrect = "Hint: Try again, you can pick another answer!", # What do you want the students to see if they get the wrong answer?
+    allow_retry = TRUE # Should they be able to retry? Insert FALSE if you want to only allow one submission
+    )
+```
+
+
+### 2.2. List Section
+
+- You can also make lists
+- List Item
+- List Item
+- List Item
+- List Item
+
+
+### 2.3. Table Section
+
+You can use tables to convey information and you can also use Latex symbols between "$" tags
+
+Here's an example:
+
+#### Parameters and symbols
+
+| Parameter name            | Population parameter symbol   | Sample statistic  |
+| ----------------- |:-------------:|:-----:|
+| Number of cases   | $N$           | $n$     |
+| Mean              | $\mu$         | $\overline{x}$ (Sample mean)|
+| Proportion        | $\pi$         | $P$ (Sample proportion) | 
+| Variance          | $\sigma^{2}$  | $s^{2}$ (Sample variance) |
+| Standard deviation| $\sigma$      | $s$ (sample standard deviation) |
+
+
+## 3. Example Exercises
+
+### 3.1. Exerise Instructions
+
+Replace with your instructions or delete if not needed!
+
+- Create a variable called pop that includes the letters a-j
+- Create a variable called samp1 by sampling the population using the sample() function
+- Create a variable called samp2 by sampling the population using the sample() function with replacement
+- Try to figure out how to add a bias to your sample that only draws the ‘black’ letters  a, b, g, and h and then make a samp3 variable with the biased sample.
+
+### Exercise 1.1
+
+Replace with your exercise prompt!
+  
+Create a variable called pop that includes the letters a-j. 
+
+```{r ex1, exercise=TRUE}
+### Similarly to quizzes and other code chunks, make sure "ex1" is a unique label in your document!
+
+#Create a variable called pop that includes the letters a-j
+
+```
+```{r ex1-hint}
+#Use base function letters and select 1:10 (j is 10. letter) 
+pop<-base::letters[1:10] ## You can add a hint here! Students see this when they click on the hint button!
+```
+```{r ex1-check}
+#You can add a function to check correctness here, but this is more advanced and not included in out of the box LearnR
+```
+
+### Notes
+
+Note that the global environment doesn't work for LearnR, code chunks only save information locally and it can't be passed easily between code chunks. You can get around this by preloading data in the global setup chunk in the beginning of the document (see my example), by making code chunks modular or by instruction students to repeat/copy previous steps if needed. You can test it out with the example exercises below.
+
+### Exercise 1.2
+
+Create a variable called samp1 by sampling the population using the sample() function
+
+You can do this by using sample() function included in R. When you're done, type samp1 to see the results.
+
+```{r ex2, exercise=TRUE}
+#Create a variable called samp1 by sampling the population using the sample() function
+
+
+```
+```{r ex2-hint}
+#Use function sample(), to find out more you can type ?sample and run code to get help
+samp1<-sample(pop,size=4,replace=FALSE)
+```
+```{r ex2-check}
+#store
+```
+
+
+
+### Exercise 1.3
+
+Create a variable called samp2 by sampling the population using the sample() function with replacement. Check its contents by typing samp2 and running the code.
+
+```{r ex3, exercise=TRUE}
+#Create a variable called samp2 by sampling the population using the sample() function with replacement
+
+
+```
+```{r ex3-hint}
+#Use function sample(), to find out more you can type ?sample and run code to get help
+samp2<-sample(pop,size=4,replace=TRUE)
+```
+```{r ex3-check}
+#store
+```
+### Exercise 1.4
+
+Figure out how to add a bias to your sample that only draws the ‘black’ letters  a, b, g, and h and then make a samp3 variable with the biased sample. Remember that in sample(x, size, replace = FALSE, prob = NULL), prob stands for  a vector of probability weights for obtaining the elements of the vector being sampled. Check your work by printing out samp3.
+
+```{r ex4, exercise=TRUE}
+#Try to figure out how to add a bias to your sample that only draws the ‘black’ letters  a, b, g, and h and then make a samp3 variable with the biased sample.
+
+```
+```{r ex4-hint}
+#Try to figure out how to add a bias to your sample that only draws the ‘black’ letters  a, b, g, and h and then make a samp3 variable with the biased sample.
+bias<-c(1,1,0,0,0,0,1,1,0,0) #add a bias to letters a,b,g,h
+samp3<-sample(pop,size=4,prob = bias,replace=FALSE)
+
+```
+```{r ex4-check}
+#store
+```
+
+
+### That's all, well done!
