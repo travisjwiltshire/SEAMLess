@@ -32,3 +32,6 @@ To run a template intended for local testing ([Quizzes without plots](https://gi
 
 You should see a green arrow with the text "Run Document" above the code window. A local version of the file will be compiled and it will open in a new window. This may take a few minutes. What you will see is an accurate and interactive representation of what would be deployed online. You will also have the option to open it in a browser to see what it would look like to students interacting with it on the web. Alternatively, you can provide the students with the .rmd files to run locally.
 
+## Funding
+
+This project was partially supported by Tilburg University's EDUiLAB (Educational Innovation Lab): Innovation your education program awarded to Travis J. Wiltshire and funding from the Tilburg University School of Humanites and Digital Sciences.  
