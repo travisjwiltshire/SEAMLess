@@ -6,7 +6,6 @@ output:
     progressive: true # Do you want exercises to appear in chunks? Replace "true" with "false" if you want them to appear all at once
     allow_skip: true # Do you want exercises to be skippable? Replace "true" with "false" if you do not
     theme: "paper"
-    css: css/style.css
 runtime: shiny_prerendered
 ---
 
@@ -17,6 +16,9 @@ runtime: shiny_prerendered
 ## Insert the libraries you use here
 require(learnr)
 
+## Global options: checking exercises is only possible with additional specialized code, so this is turned off to avoid errors
+tutorial_options(exercise.eval = FALSE, exercise.checker=FALSE)
+
 
 ## Pre-load data for exercises here
 pop<-base::letters[1:10]
@@ -26,7 +28,7 @@ samp2<-sample(pop,size=4,replace=TRUE)
 ## Introduction
 
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
-knitr::include_graphics("images/banner.png")  
+#knitr::include_graphics("images/banner.png")  
 
 ### You can insert an image/banner for your lecture here. If not needed, you can detele this chunk
 ```
