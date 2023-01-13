@@ -46,6 +46,19 @@ In addition to the steps above, you will need to set up a web server hosting a d
 
 Once the databse is running and some initial tables have been created, you can test it with the template files that include different options for visualizing quiz anwers and exercise progress found [here](https://github.com/travisjwiltshire/SEAMLess/tree/main/Templates/Quizzes%20with%20plots). You will need to fill in your database IP address and login information in the beginning of the document (instructions are provided in comments). After that, publishing and testing work the same as described in the abvove sections.
 
+### For creating interactive lectures:
+
+Fruther instructions for creating interactive lectures with RMarkdown and LearnR can be found [here](https://github.com/travisjwiltshire/SEAMLess/blob/main/Documentation/).
+
+You may also find the following resources helpful:
+- [Documentation for R/RStudio](https://www.rdocumentation.org/)
+- [Educational tools using R/RStudio](https://education.rstudio.com/teach/tools/)
+- [A quick start guidue for RMarkdown]( https://rmarkdown.rstudio.com/lesson-1.html)
+- [Documentation for RMarkdown](https://rmarkdown.rstudio.com/docs/)
+- [A quick start guide for LearnR](https://rstudio.github.io/learnr/articles/learnr.html)
+- [Documentation for LearnR](https://rstudio.github.io/learnr/articles/learnr.html)
+- [Documentation for ShinyApps](https://docs.posit.co/shinyapps.io/)
+
 ## Funding
 
 This project was partially supported by Tilburg University's EDUiLAB (Educational Innovation Lab): Innovation your education program awarded to Travis J. Wiltshire and funding from the Tilburg University School of Humanites and Digital Sciences.  
