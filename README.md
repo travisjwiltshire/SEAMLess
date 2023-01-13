@@ -26,7 +26,7 @@ Note that any template files including plots are made for online deployment, as 
 
 ### For local use:
 
-To run a template intended for local testing (https://github.com/travisjwiltshire/SEAMLess/tree/main/Templates/Quizzes%20without%20plots for example), download the folder and open the .Rmd file in RStudio. Ensure you have installed the required packages (rmarkdown, shiny, learnr), you can do this with install.packages("package_name") if needed.
+To run a template intended for local testing ([Templates/Quizzes without plots]https://github.com/travisjwiltshire/SEAMLess/tree/main/Templates/Quizzes%20without%20plots for example), download the folder and open the .Rmd file in RStudio. Ensure you have installed the required packages (rmarkdown, shiny, learnr), you can do this with install.packages("package_name") if needed.
 
 You should see a green arrow with the text "Run Document" above the code window. A local version of the file will be compiled and it will open in a new window. This may take a few minutes. What you will see is an accurate and interactive representation of what would be deployed online. You will also have the option to open it in a browser to see what it would look like to students interacting with it on the web. Alternatively, you can provide the students with the .rmd files to run locally.
 
