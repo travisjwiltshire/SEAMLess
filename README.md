@@ -53,7 +53,7 @@ Fruther instructions for creating interactive lectures with RMarkdown and LearnR
 You may also find the following resources helpful:
 - [Documentation for R/RStudio](https://www.rdocumentation.org/)
 - [Educational tools using R/RStudio](https://education.rstudio.com/teach/tools/)
-- [A quick start guidue for RMarkdown]( https://rmarkdown.rstudio.com/lesson-1.html)
+- [A quick start guide for RMarkdown]( https://rmarkdown.rstudio.com/lesson-1.html)
 - [Documentation for RMarkdown](https://rmarkdown.rstudio.com/docs/)
 - [A quick start guide for LearnR](https://rstudio.github.io/learnr/articles/learnr.html)
 - [Documentation for LearnR](https://rstudio.github.io/learnr/articles/learnr.html)
