@@ -48,7 +48,7 @@ Once the databse is running and some initial tables have been created, you can t
 
 ### For creating interactive lectures:
 
-Fruther instructions for creating interactive lectures with RMarkdown and LearnR can be found [here](https://github.com/travisjwiltshire/SEAMLess/blob/main/Documentation/). You can use the basic lecture template provided [here](https://github.com/travisjwiltshire/SEAMLess/tree/main/Templates) as a starting point. Different options for quiz questions and progress plots are also provided in the same folder. Examples of code for fully developed lectures created for the Statistics II course are available in the [example lectures folder](https://github.com/travisjwiltshire/SEAMLess/tree/main/Example%20lectures%20from%20Statistics%20II).
+Fruther instructions for creating interactive lectures with RMarkdown and LearnR can be found [here](https://github.com/travisjwiltshire/SEAMLess/blob/main/Documentation/). You can use the basic lecture template provided [here](https://github.com/travisjwiltshire/SEAMLess/tree/main/Templates) as a starting point. Different options for quiz questions and progress plots are also provided in the same folder. Examples of code for fully developed lectures created for the Statistics II course taught by Travis J. Wiltshire at Tilburg University are available in the [example lectures folder](https://github.com/travisjwiltshire/SEAMLess/tree/main/Example%20lectures%20from%20Statistics%20II).
 
 You may also find the following resources helpful:
 - [Documentation for R/RStudio](https://www.rdocumentation.org/)
