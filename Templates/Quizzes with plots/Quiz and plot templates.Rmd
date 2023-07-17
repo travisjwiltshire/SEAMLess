@@ -1,9 +1,5 @@
 ---
 title: "Your title here"
-date: |
-  <center>
-    ![](images/logo.png){width=2in}
-  </center>
 output: 
   learnr::tutorial:
     progressive: true
@@ -12,13 +8,8 @@ output:
     css: css/style.css
 runtime: shiny_prerendered
 ---
-```{r setup, include=FALSE}
-## Importing required libraries
-library(learnr)
-library(tidyr)
-library(dplyr)
-library(ggplot2)
-library(scales)
+
+```{r, context="server-start", include = FALSE}
 library(RMariaDB)
 library(DBI)
 library(pool)
@@ -28,29 +19,44 @@ library(pool)
 ################################################################################
 
 pool <- dbPool(
-  drv = RMySQL::MySQL(), ## Check that this corresponds to the type of database you are using (MySQL/MariaDB, etc.)
-  dbname = "YOUR DATABASE NAME",
-  host = "DATABASE IP", 
-  username = "USERNAME", ## Make sure the user has read & write rights for the selected database
-  password = "PASSWORD"
+  drv = RMariaDB::MariaDB(), ## Check that this corresponds to the type of database you are using (MySQL/MariaDB, etc.)
+  dbname = "database_name",
+  host = "database IP address", 
+  username = "user", ## Make sure the user has read & write rights for the selected database
+  password = "password"
 )
 
-dbtable = "THE TABLE YOU WANT TO STORE QUIZ/EXERCISE DATA IN FOR THIS MODULE"
 ################################################################################
 
-## The rest of this chunk does not need to be changed
+dbtable = "table_name" ## Set the table name here!
 
 select_query = paste("SELECT * FROM", dbtable)
+```
 
-## Global options
+
+```{r setup, include=FALSE}
+
+########################################## SEAMLESS SETUP ###########################################
+## You generally don't need to change this part ##
+
+## Loading packages
+library(shiny)
+library(learnr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(scales)
+
+## RMD Options
 knitr::opts_chunk$set(echo = TRUE)
 tutorial_options(exercise.eval = FALSE, exercise.checker=FALSE)
 
-## Recording data to database
-new_recorder <- function(tutorial_id, tutorial_version, user_id, event, data) {
-    cat(user_id, ", ", event, ",", data$label, ", ", data$answer, ", ", data$correct, "\n", sep = "", append = TRUE)
+## RECORDING DATA
 
-## This determines which user data is collected  
+## Recorder function
+initialize_recorder <- function(tutorial_id, tutorial_version, user_id, event, data) {
+    cat(user_id, ", ", event, ",", data$label, ", ", data$answer, ", ", data$correct, "\n", sep = "", append = TRUE)
+  
 d_tibble <- tibble::tibble(
 user_id  = user_id, 
 event = event,
@@ -60,13 +66,75 @@ question = data$question,
 answer = data$answer
   )
 
-## Send recorded data to the database
-dbWriteTable(pool, dbtable, d_tibble, append=TRUE, row.names = FALSE)}
+## Send to mysql
+dbWriteTable(pool,dbtable, d_tibble, append=TRUE, row.names = FALSE)}
 
-options(tutorial.event_recorder = new_recorder)
+options(tutorial.event_recorder = initialize_recorder)
+
+## QUIZ FUNCTIONS
+
+quizQuestion <- function(question, answers, correct) {
+  answer_list <- lapply(1:length(answers), function(i) {
+    if (i == correct) {
+      rlang::expr(answer(!!answers[i], correct = TRUE))
+    } else {
+      rlang::expr(answer(!!answers[i]))
+    }
+  })
+
+  question_args <- c(
+    list(
+      question,
+      incorrect = "Hint: Try again, you can pick another answer!",
+      allow_retry = TRUE
+    ),
+    answer_list
+  )
+
+  do.call(learnr::question, question_args)
+}
+
+## PLOT FUNCTIONS
+
+# UI part of the function
+quizPlotUI <- function(id) {
+  ns <- NS(id)
+  plotOutput(ns("quiz_plot"))
+}
+
+# Server part of the function
+quizPlot <- function(input, output, session, quiz_number, correct_answer) {
+  label_name <- paste0("Quiz", quiz_number)
+
+  output$quiz_plot <- renderPlot({
+    data <- dbGetQuery(pool, select_query)
+    answers <- subset(data, data$label == label_name)
+    answers[answers=="<NA>"] <- NA
+    answers <- na.omit(answers)
+
+    answers_count <- as.data.frame(answers %>% count(answer))
+    total_n = nrow(answers)
+    answers_count$percentage <- (answers_count$n / total_n) * 100
+    answers_count$correct <- ifelse(answers_count$answer == correct_answer, "Correct", "Incorrect")
+
+    ggplot(answers_count, aes(x = percentage, y = answer, fill = correct)) +
+      geom_col(width = 0.6) +
+      theme_minimal() +
+      scale_fill_brewer(palette = "Paired", direction = -1) +
+      xlab("Percentage (%)") +
+      ylab("Answer") +
+      labs(fill = "Correct")
+  })
+}
+
+#################################### MODULE SETUP ##########################################################
+
+## Load your module specific data and packages here to have them globally accessible throughout different code blocks 
+
+fractaldata <- read.csv("data/filename.csv", sep=";") # Your filepath is data/filename.filetype
+# (Make sure to put the data in a folder called data and deploy it with your rmd)
 
 ```
-
 
 ## Word cloud
 
@@ -130,7 +198,7 @@ output$Q1 <- renderPlot({
 
 ## Regular quizzes
 
-An example of a basic question and plot.
+An example of a basic question and plot. Helper functions defined in the setup block can be used to simplify making quizzes and plots, which cuts down on code throughout the file if you have a number of questions. These help functions can also be used for the following questions with pictures.
 
 ### Which of the following models shows orthogonal polynomial regression with a quadratic term?
 
@@ -139,13 +207,16 @@ An example of a basic question and plot.
 
 ## You can add or remove answer options by copypasting another line of answer("answer option"), or deleting one of the lines below
 
-  question("Which of the following models shows orthogonal polynomial regression with a quadratic term?", ## Your question here
-    answer("`lm(affect ~ stress + I(stress^2))`"),
-    answer("`lm(affect ~ stress * performance)`"),
-    answer("`lm(affect ~ poly(stress, 2) + performance)`", correct = TRUE), ## Move ", correct = TRUE" after the correct answer
-    answer("`lm(affect ~ poly(stress, 3) + performance)`"),
-    allow_retry = FALSE ## Should the students be able to try again? FALSE = only one attempt, TRUE = unlimited attempts
-    )
+quizQuestion(
+  question = "Which of the following models shows orthogonal polynomial regression with a quadratic term?",
+  answers = c(
+    "`lm(affect ~ stress + I(stress^2))`",
+    "`lm(affect ~ stress * performance)`",
+    "`lm(affect ~ poly(stress, 2) + performance)`",
+    "`lm(affect ~ poly(stress, 3) + performance)`" # You can add more lines here for more answer options
+  ),
+  correct = 3 # The order nr of the answer option that is correct
+)
 ```
 
 
@@ -157,32 +228,13 @@ plotOutput("Q2")
 
 ```{r, Quiz2R, context="server", echo = FALSE, warning = FALSE, message=FALSE, out.width="100%", fig.align = "center"}
 
-## Write the correct answer here (it must be an exact match inside quotation marks)
-correct_answer = "`lm(affect ~ poly(stress, 2) + performance)`"
-
-output$Q2 <- renderPlot({
-  
-  data <- dbGetQuery(pool, select_query)
-  
-  answers <- subset(data, data$label == "Quiz2",) ## Make sure this is the label of the question
-  answers[answers==""] <- NA
-  answers <- na.omit(answers)
-
-  answers_count <- as.data.frame(answers %>% 
-  count(answer))
-  total_n = nrow(answers)
-  answers_count$percentage <- (answers_count$n/total_n)*100
-  answers_count$correct <- ifelse(answers_count$answer == correct_answer, "Correct", "Incorrect")
-
-  ggplot(answers_count,
-         aes(x = percentage,
-             y = answer,
-             fill=correct
-             )
-         ) +
-    geom_col(width=0.6) +theme_minimal() + scale_fill_brewer(palette="Paired", direction=-1)  +
-    xlab("Percentage (%)") + ylab("Answer") + labs(fill = "Correct")
-})
+quizPlot(
+  input,
+  output,
+  session,
+  quiz_number = "Quiz2", # This should match the name in the question's code chunk header
+  correct_answer = "`lm(affect ~ poly(stress, 2) + performance)`" # Copy-paste the correct answer here
+)
 ```
 
 ## Pictures in quizzes
