@@ -1,0 +1,841 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.2.1",
+  "metadata": {
+    "appmode": "static",
+    "primary_rmd": null,
+    "primary_html": "Example lectures from Statistics II/Lecture 10/lecture10.html",
+    "content_category": null,
+    "has_parameters": false
+  },
+  "packages": null,
+  "files": {
+    "Documentation/Database setup.pdf": {
+      "checksum": "15b009a8a7f778468495a2b6d1c929c8"
+    },
+    "Documentation/Interactive lessons with learnr & shiny.pdf": {
+      "checksum": "6c82b2e3d364a76ebb2375c45bc586d9"
+    },
+    "Documentation/RMarkdown cheatsheet.pdf": {
+      "checksum": "631021050c001ddb12883aa710222470"
+    },
+    "Documentation/RStudio cheatsheet.pdf": {
+      "checksum": "2d74628d159af5098c86f3b30ce380d3"
+    },
+    "Documentation/Shiny cheatsheet.pdf": {
+      "checksum": "071382275540292da70591d5038a7b70"
+    },
+    "Example lectures from Statistics II/Lecture 1/css/bootstrap.css": {
+      "checksum": "54cbb416d131e9b3b42706489283c754"
+    },
+    "Example lectures from Statistics II/Lecture 1/css/style.css": {
+      "checksum": "25c789397b46f9449350e3b8c07dcb85"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/areaundercurve.png": {
+      "checksum": "223411cd9ccb1fbb543b8f97d9709deb"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/article1.png": {
+      "checksum": "df3a5f5bedf044e58f9c363788ec9009"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/article2.png": {
+      "checksum": "78b83b1cb44936b426c0475714d0821c"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/bayes.png": {
+      "checksum": "ad7acd2622a8f75183c756d718efb8ab"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/BinomialDistribution.png": {
+      "checksum": "4812201fcf1cfd4bdee25f3b0f907068"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/brains.png": {
+      "checksum": "112179ba5cc0e9fc0b2563cbb7dbe505"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/cards.png": {
+      "checksum": "cd027b74f922dc34e838b5e5c5e65472"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/clouds.png": {
+      "checksum": "631035764c2d8c838bf827b8803cb1fc"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/coursemodel.png": {
+      "checksum": "82d52ecbd230e1ab85252b4632f7ca86"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/examgif.gif": {
+      "checksum": "fc855ebee409e94d203b1166c3b197a5"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/exerciseBinomial.png": {
+      "checksum": "279d3de44be1dbe516afaaba4232274d"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/figure9.10.png": {
+      "checksum": "a6815d38211fe4e1bff0129e0936f13b"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/figure9.11.png": {
+      "checksum": "98813e4273d4e146347ce02a4a0fe305"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/figure9.12.png": {
+      "checksum": "3c9dc297880f6eb2b8cc948df29850d4"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/figure9.6.png": {
+      "checksum": "c630a114fb6335adc3381d858c724977"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/figure9.7.png": {
+      "checksum": "293313e344631ce8da070cc0df0b249b"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/foundation.png": {
+      "checksum": "d7ee40b441e02115411afad56da27b55"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/huston.png": {
+      "checksum": "8239668825a1244ea62201c62042aee4"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/jeansgraph.png": {
+      "checksum": "2764490343aabc4e63733ac5603056c5"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/jeanstable.png": {
+      "checksum": "538718e2eeceadc46f8010525a02c952"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/JonatanBook.png": {
+      "checksum": "237e641f2cbe86ccb3cb3968b5cd587c"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/JonatanButner.png": {
+      "checksum": "3fce0caf8cf35b75ba507de3fed1a69d"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/LearnStatistics.png": {
+      "checksum": "cb9b0765ab57c0a05cbb3155bc5617ff"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/lecturetime.png": {
+      "checksum": "4c3f0f083a4968df9fbeb7ad6fdb85c0"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/logo.png": {
+      "checksum": "c784a18f8817b64c372d02d533cd750a"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/moon.png": {
+      "checksum": "0bd4b4250ddea34fb1d976621e94457e"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/normaldistribution.png": {
+      "checksum": "e74988ee36529b41160d34f59ae7c3b5"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/outdoor1.png": {
+      "checksum": "8aa45ddb9a4035b2727c2ec3b014a8c8"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/outdoor2.png": {
+      "checksum": "4bef36b8c87330f4da77cb6090b1f9c8"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/outlinemountain.png": {
+      "checksum": "2f48d72880dd729c0a901033cef83b92"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/probability.png": {
+      "checksum": "e7fc5da63d57b9ac12434372154993ab"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/probabilitybucket.png": {
+      "checksum": "0ab312ac8282c6b999ffab163621d663"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/rstudio.png": {
+      "checksum": "5b47edfacca05a7535273d7c1b9bdc27"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/Silvy.jpg": {
+      "checksum": "70c7dd21a42ae8bda3d075b9650acbe6"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/SteveFiore.jpg": {
+      "checksum": "571c7d7723896c9a76d2d3e51c4572a0"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/syllabus.png": {
+      "checksum": "3bfd1599391daf5dfa13fe7f1400fd61"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/tacos.png": {
+      "checksum": "d6c6ab5164edc8730b64fad8ad163fc9"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/TeamCognition.png": {
+      "checksum": "ad19f6569ed111566ddb821ace6385f6"
+    },
+    "Example lectures from Statistics II/Lecture 1/images/timechart.png": {
+      "checksum": "9368af3b52d54d222e50bbee5665a9e5"
+    },
+    "Example lectures from Statistics II/Lecture 1/Lecture1.Rmd": {
+      "checksum": "2c827344bfe6f5c5c1323b802d00b251"
+    },
+    "Example lectures from Statistics II/Lecture 10/css/bootstrap.css": {
+      "checksum": "54cbb416d131e9b3b42706489283c754"
+    },
+    "Example lectures from Statistics II/Lecture 10/css/style.css": {
+      "checksum": "406b8d38f768a041ff6a6d474b7ad530"
+    },
+    "Example lectures from Statistics II/Lecture 10/data/cub.csv": {
+      "checksum": "d8d8175816a34566b1444235dde05e76"
+    },
+    "Example lectures from Statistics II/Lecture 10/data/GPA.DATA.csv": {
+      "checksum": "6ad7d8e8f33807781725d0527d482d0d"
+    },
+    "Example lectures from Statistics II/Lecture 10/data/yerkes.dods.csv": {
+      "checksum": "0475f738e245f82ed63047811e7286f3"
+    },
+    "Example lectures from Statistics II/Lecture 10/images/curvilinear.png": {
+      "checksum": "4046036c912983162ba91acd646ec07b"
+    },
+    "Example lectures from Statistics II/Lecture 10/images/logo.png": {
+      "checksum": "c784a18f8817b64c372d02d533cd750a"
+    },
+    "Example lectures from Statistics II/Lecture 10/images/narulatable.png": {
+      "checksum": "792ab2edc5852841ba8998e9c77ac6cd"
+    },
+    "Example lectures from Statistics II/Lecture 10/images/orthogonalpolynom.png": {
+      "checksum": "4f266c2154a4519126a851f66cfedbda"
+    },
+    "Example lectures from Statistics II/Lecture 10/images/polynomialplots.png": {
+      "checksum": "d3be7fac69b7dcc1f599d918a560b415"
+    },
+    "Example lectures from Statistics II/Lecture 10/images/polynomialplots2.jpg": {
+      "checksum": "56e7b5bd43be8caf14a1d14ce9984075"
+    },
+    "Example lectures from Statistics II/Lecture 10/images/polynomialregression.png": {
+      "checksum": "961db635529e3cbe8ac0eeb77ab7cff2"
+    },
+    "Example lectures from Statistics II/Lecture 10/images/polynomialterms.png": {
+      "checksum": "4eaace66cf0ccdcb79ee6840286b9bdd"
+    },
+    "Example lectures from Statistics II/Lecture 10/images/polynomialtypes.png": {
+      "checksum": "36a5fc979b64c7cbd4136f23f007d3e0"
+    },
+    "Example lectures from Statistics II/Lecture 10/images/quadraticplot.png": {
+      "checksum": "7c0ac702fe210db55bf62453c5158147"
+    },
+    "Example lectures from Statistics II/Lecture 10/images/workingmemory.png": {
+      "checksum": "4ae8e39e1f11e28bda936eeeb4c1b287"
+    },
+    "Example lectures from Statistics II/Lecture 10/images/yerkes-dodson.png": {
+      "checksum": "c66dde5d13f022744d53299a12477f16"
+    },
+    "Example lectures from Statistics II/Lecture 10/lecture10.html": {
+      "checksum": "4e6c84f4d8c7f6ce1be710167955355d"
+    },
+    "Example lectures from Statistics II/Lecture 10/lecture10.Rmd": {
+      "checksum": "cac81e6f336d787653d60f1fb00cb74e"
+    },
+    "Example lectures from Statistics II/Lecture 10/student_progress.txt": {
+      "checksum": "920229ff221354165c23417c85b0fab5"
+    },
+    "Example lectures from Statistics II/Lecture 11/css/bootstrap.css": {
+      "checksum": "54cbb416d131e9b3b42706489283c754"
+    },
+    "Example lectures from Statistics II/Lecture 11/css/style.css": {
+      "checksum": "406b8d38f768a041ff6a6d474b7ad530"
+    },
+    "Example lectures from Statistics II/Lecture 11/data/politeness_data.csv": {
+      "checksum": "3f9ad8aa85550c2aca4a7f0b4ac67d9e"
+    },
+    "Example lectures from Statistics II/Lecture 11/images/4plots.png": {
+      "checksum": "f2ca8fa2952db32d26614c1ae8a631cf"
+    },
+    "Example lectures from Statistics II/Lecture 11/images/ex3.png": {
+      "checksum": "6eb1af9d5ac118e4ab2942d5497f0b30"
+    },
+    "Example lectures from Statistics II/Lecture 11/images/fixedslopes.png": {
+      "checksum": "39aeabf4bda0e58679e2821edaabedf4"
+    },
+    "Example lectures from Statistics II/Lecture 11/images/influence.png": {
+      "checksum": "a2c696313f35814f72ed0af850b3f81d"
+    },
+    "Example lectures from Statistics II/Lecture 11/images/influenceanalysis.png": {
+      "checksum": "27967a642d34c75d2309c642eadf0e46"
+    },
+    "Example lectures from Statistics II/Lecture 11/images/logo.png": {
+      "checksum": "c784a18f8817b64c372d02d533cd750a"
+    },
+    "Example lectures from Statistics II/Lecture 11/images/mikado.png": {
+      "checksum": "c325727e8a7ba3514bb9ccdc799ca486"
+    },
+    "Example lectures from Statistics II/Lecture 11/images/predictors.png": {
+      "checksum": "1a2535ce549ed95a35b0bc192fcc0a63"
+    },
+    "Example lectures from Statistics II/Lecture 11/images/randomslopes.png": {
+      "checksum": "5fa79d5f776f3176d1b0c7d2a567d7af"
+    },
+    "Example lectures from Statistics II/Lecture 11/images/tablemethod.png": {
+      "checksum": "0ac44436fc5b0867b4a97a8aab59b549"
+    },
+    "Example lectures from Statistics II/Lecture 11/Lecture11.html": {
+      "checksum": "53127d69ad2a970e827727f3b9f958f7"
+    },
+    "Example lectures from Statistics II/Lecture 11/Lecture11.Rmd": {
+      "checksum": "7a55f2540d0ccb7c805347ca66d03160"
+    },
+    "Example lectures from Statistics II/Lecture 12/css/bootstrap.css": {
+      "checksum": "54cbb416d131e9b3b42706489283c754"
+    },
+    "Example lectures from Statistics II/Lecture 12/css/style.css": {
+      "checksum": "406b8d38f768a041ff6a6d474b7ad530"
+    },
+    "Example lectures from Statistics II/Lecture 12/data/GrowthCurve_Examples.Rdata": {
+      "checksum": "0c061bf2cc70f8bfcb41ee59af049b5c"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/appliedergonomics.png": {
+      "checksum": "c3f4c3bba90b2acf103a49367c38dbc0"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/beyond_multiple_regression.jpg": {
+      "checksum": "6676162e69161c989e9d5c553136ee5d"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/bigtable.png": {
+      "checksum": "1b0f5079628fce820058ead7daf1aa3a"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/conditioneffects.png": {
+      "checksum": "d115e0bb62111abc2023f41edeae006f"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/ex5.png": {
+      "checksum": "e3542f38cf8c2861c875454338468b5a"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/ex9.png": {
+      "checksum": "4b0d5731fee624bf44beb31b7b624a53"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/ggplotfixation.png": {
+      "checksum": "17a983959f89544df60b1c7414413687"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/GrowthCurveAnalysis.png": {
+      "checksum": "93b9e0598d40ea0c73406e9aaaff70fd"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/growthcurvemodel.png": {
+      "checksum": "1e8c8d1e846c066d5783fcc8acc1e7a5"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/growthcurvemodels.png": {
+      "checksum": "92c46eed395063780f0b91697a9a6655"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/logo.png": {
+      "checksum": "c784a18f8817b64c372d02d533cd750a"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/polynomialexamples.png": {
+      "checksum": "8e0be93d4b1e860165fd74f2e61dd24c"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/polynomialterms.png": {
+      "checksum": "f13fb3f452b6dcec404d9cd166fca43b"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/quadraticpolynomials.png": {
+      "checksum": "98ed782a691236bce64950a0adb88f3a"
+    },
+    "Example lectures from Statistics II/Lecture 12/images/table3.1.png": {
+      "checksum": "c777e539b83110186b44c5d04685e456"
+    },
+    "Example lectures from Statistics II/Lecture 12/Lecture12.html": {
+      "checksum": "1d7291ad17e428bd704bd0b46c85b496"
+    },
+    "Example lectures from Statistics II/Lecture 12/Lecture12.Rmd": {
+      "checksum": "18af1e7c455c0ae846ee19feb84710cc"
+    },
+    "Example lectures from Statistics II/Lecture 2/css/bootstrap.css": {
+      "checksum": "54cbb416d131e9b3b42706489283c754"
+    },
+    "Example lectures from Statistics II/Lecture 2/css/style.css": {
+      "checksum": "25c789397b46f9449350e3b8c07dcb85"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/accounting.png": {
+      "checksum": "50dfb9dd058938a9ab258b6c75d2a2f7"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/CIresearch.png": {
+      "checksum": "f6e0246e38e9a6615a41376710375343"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/convenience.png": {
+      "checksum": "aade5ba97c7c20b46b859091b7c621ed"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/diceavg.png": {
+      "checksum": "3dcc4384d8fa7554c2a215cd8aad4b5e"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/ex1.png": {
+      "checksum": "6e8e492bd96956f169447cbc161c5a1d"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/ex2.png": {
+      "checksum": "716dce6e5e3363739f67470f1cc24d3d"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/ex21.png": {
+      "checksum": "22f3264f2b59c8df3248f728c4a0d6d4"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/ex22.png": {
+      "checksum": "a8ccf76d47cc3c925b4b5d47d866d904"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/ex3.png": {
+      "checksum": "b1dd159de980e7168e357003f621ff11"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/ex4.png": {
+      "checksum": "3e9b6fd5c9c026274746860d35276cc2"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/ex41.png": {
+      "checksum": "652a62003d0db3e733d9acdf4693e241"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/ex5.png": {
+      "checksum": "a081cc3d6a136242bd0c18a56a0d0d4c"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/ex51.png": {
+      "checksum": "2777221edce65852ff8df4cda9fa114e"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/ex6.png": {
+      "checksum": "b1d95051cdea78020c0ad7846456954e"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/ex61.png": {
+      "checksum": "18a7160108f9fd2ace840493a94f326c"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/ex7.png": {
+      "checksum": "43e18f1025c46b02a054a350a9dd8740"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/ex8.png": {
+      "checksum": "fd3cb0a625496e0c1a520ee65eae6288"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/figure10.1.png": {
+      "checksum": "ccadf44ba04979854058a48a59dc8064"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/figure10.11.png": {
+      "checksum": "d2f862f4c42321ac40e2fbbafe6840cc"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/figure10.2.png": {
+      "checksum": "303b3d1454285e9023337106fc5b0e57"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/figure10.3.png": {
+      "checksum": "2237e7fbd7ebfbd20cba2037158409a7"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/figure10.5.png": {
+      "checksum": "22f3264f2b59c8df3248f728c4a0d6d4"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/logo.png": {
+      "checksum": "c784a18f8817b64c372d02d533cd750a"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/magnifying.png": {
+      "checksum": "f9961c3fec274d97944e399f49f45885"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/meandistribtuion.png": {
+      "checksum": "a519675cb04bd16879276025cafc6bf7"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/normaldistribution.png": {
+      "checksum": "e568138a7f01c91aeaba2b7a791223a4"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/sampling.png": {
+      "checksum": "a9461e0757d786874614f906c66cd103"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/snowball.png": {
+      "checksum": "53e2ec0d4e7ab88eb2f528ab63c25c90"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/table1.png": {
+      "checksum": "f4e0f815092e882bde419f47bf5fa388"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/table2.png": {
+      "checksum": "95905ab79ddaba2f93dc14040fbf3c5d"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/table3.png": {
+      "checksum": "ababe795e713c1d47357d6eceba09a43"
+    },
+    "Example lectures from Statistics II/Lecture 2/images/table4.png": {
+      "checksum": "bda77b1cdd20c8cdea782471380a4445"
+    },
+    "Example lectures from Statistics II/Lecture 2/Lecture2.Rmd": {
+      "checksum": "227141b9c672689ef63de4a15a87a8b5"
+    },
+    "Example lectures from Statistics II/Lecture 3/css/bootstrap.css": {
+      "checksum": "54cbb416d131e9b3b42706489283c754"
+    },
+    "Example lectures from Statistics II/Lecture 3/css/style.css": {
+      "checksum": "406b8d38f768a041ff6a6d474b7ad530"
+    },
+    "Example lectures from Statistics II/Lecture 3/data/Exam Anxiety.dat": {
+      "checksum": "fbd57f95dfa32812f1809f7d99c5fffb"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/advert-package.png": {
+      "checksum": "44762c15395fbf9fb69ae87498a0ab35"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/corcominc.png": {
+      "checksum": "b6c4fa9bb945d546cd1750f1f3d6144f"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/corfunctions.png": {
+      "checksum": "b22ad924b436d463d773426a69a8f4e4"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/correlationcomic.png": {
+      "checksum": "63861302126ed9375abde0c9b6f36247"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/correlationplots.png": {
+      "checksum": "91a5e3a593c9b95f412b783577362f92"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/criticalregion.jpg": {
+      "checksum": "475b1e0f9d7fc5ad51640f2abc3bd939"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/effectsize.png": {
+      "checksum": "4d194be9f8a73dd6b37b3a33c6100e46"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/errortype.png": {
+      "checksum": "1f106cd3337e7c48e974086b6e0d23eb"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/frequencydistribution.png": {
+      "checksum": "4476a589d6ccf240fc785a6df8ea7d22"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/guesscor.png": {
+      "checksum": "768ee760549390bcd2e9f73387b453c6"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/hboundary.jpg": {
+      "checksum": "d00273991cd62fb985c8115445474b41"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/hypothesis.png": {
+      "checksum": "fc4ff2d7bf8644e484fab27807836a70"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/logo.png": {
+      "checksum": "c784a18f8817b64c372d02d533cd750a"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/overlap.png": {
+      "checksum": "bb9f33319bea5850b46f69a8404ae5ed"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/scoresdistribution.jpg": {
+      "checksum": "b588a96524b47debf53df387b72c1316"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/sdeviation.png": {
+      "checksum": "a30afe19739c4e8bf0d9891f73a2e1b9"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/tablecovariance.png": {
+      "checksum": "c2cd7d25f6a255b56bb4c0e0a688477b"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/testframework.png": {
+      "checksum": "baa580bb5e2ae262380f34e87f0fb6d2"
+    },
+    "Example lectures from Statistics II/Lecture 3/images/testideas.png": {
+      "checksum": "ef7f257918ce5b6746f69c2ab9d75517"
+    },
+    "Example lectures from Statistics II/Lecture 3/Lecture3.Rmd": {
+      "checksum": "542f7803868a2d6bef09b4255f3f1999"
+    },
+    "Example lectures from Statistics II/Lecture 4/css/bootstrap.css": {
+      "checksum": "54cbb416d131e9b3b42706489283c754"
+    },
+    "Example lectures from Statistics II/Lecture 4/css/style.css": {
+      "checksum": "406b8d38f768a041ff6a6d474b7ad530"
+    },
+    "Example lectures from Statistics II/Lecture 4/data/Exam Anxiety.dat": {
+      "checksum": "fbd57f95dfa32812f1809f7d99c5fffb"
+    },
+    "Example lectures from Statistics II/Lecture 4/data/The Biggest Liar.dat": {
+      "checksum": "4a684951a237e86401b32dba6d755c85"
+    },
+    "Example lectures from Statistics II/Lecture 4/images/causality.png": {
+      "checksum": "9ce017c98a3bfc6d69826a89b3a59b7c"
+    },
+    "Example lectures from Statistics II/Lecture 4/images/corrconnection.png": {
+      "checksum": "10c30433b3675dc4fc22335131d8cae9"
+    },
+    "Example lectures from Statistics II/Lecture 4/images/correlations.png": {
+      "checksum": "b42ef455373526174682a18efbd11ba6"
+    },
+    "Example lectures from Statistics II/Lecture 4/images/easystats.png": {
+      "checksum": "4393c2193188cc44af9a7787fe947321"
+    },
+    "Example lectures from Statistics II/Lecture 4/images/logo.png": {
+      "checksum": "c784a18f8817b64c372d02d533cd750a"
+    },
+    "Example lectures from Statistics II/Lecture 4/images/parametriccomic.png": {
+      "checksum": "b83d4fc78e9b39b65c9a92412edab784"
+    },
+    "Example lectures from Statistics II/Lecture 4/images/varoverlap.png": {
+      "checksum": "bb9f33319bea5850b46f69a8404ae5ed"
+    },
+    "Example lectures from Statistics II/Lecture 4/Lecture4.Rmd": {
+      "checksum": "15a80f34ce1b3b01bb3d743b6938cac7"
+    },
+    "Example lectures from Statistics II/Lecture 5/css/bootstrap.css": {
+      "checksum": "54cbb416d131e9b3b42706489283c754"
+    },
+    "Example lectures from Statistics II/Lecture 5/css/style.css": {
+      "checksum": "406b8d38f768a041ff6a6d474b7ad530"
+    },
+    "Example lectures from Statistics II/Lecture 5/data/Album Sales 1.dat": {
+      "checksum": "95e8c210db57d24e5cd2a11ceaeabdcc"
+    },
+    "Example lectures from Statistics II/Lecture 5/data/Exam Anxiety.dat": {
+      "checksum": "fbd57f95dfa32812f1809f7d99c5fffb"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/bigtable.png": {
+      "checksum": "51926b9125e081ad824c0bac8f8aa3cb"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/correlationplot.png": {
+      "checksum": "91a5e3a593c9b95f412b783577362f92"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/lestsquares.png": {
+      "checksum": "8e61bc4fa80a110c1c4f54fd1a92aa9e"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/logo.png": {
+      "checksum": "c784a18f8817b64c372d02d533cd750a"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/metalcomic.png": {
+      "checksum": "8fbf2e8952be19b7efff558841ea5d89"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/modelcomic.png": {
+      "checksum": "5664b7d6e7a9a6b1c7bb8ebde86e9b68"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/regressionfigure.png": {
+      "checksum": "52041914ce275ac0272c6586eb01b1b4"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/regressionintercept.png": {
+      "checksum": "92d12ae07d06d72b06da4b4ce12183af"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/regressionline.png": {
+      "checksum": "2efaaa8a90b6af4f7867a5c135d6f57e"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/regressionslope.png": {
+      "checksum": "5e1ce6b0411ab2e414aadd4de465b304"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/slopetypes.png": {
+      "checksum": "b5bebf3f00da8669be9a871f28707c23"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/SSmod.png": {
+      "checksum": "af20f3d66961acbf2967fcd9a975b4f7"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/SSres.png": {
+      "checksum": "759806086ef44b1b7dd99e56a0974df9"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/SStotal.png": {
+      "checksum": "084f6056fc0ac2afe511151592a729af"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/sumofsquares.png": {
+      "checksum": "2acfc1cc7a9f35a8b7e196222d1fa69f"
+    },
+    "Example lectures from Statistics II/Lecture 5/images/testANOVA.png": {
+      "checksum": "272f1269624dc17e2d1d76e6b048c657"
+    },
+    "Example lectures from Statistics II/Lecture 5/Lecture5.Rmd": {
+      "checksum": "4fa2da1295beb156ad55ec87756f5402"
+    },
+    "Example lectures from Statistics II/Lecture 6/css/bootstrap.css": {
+      "checksum": "54cbb416d131e9b3b42706489283c754"
+    },
+    "Example lectures from Statistics II/Lecture 6/css/style.css": {
+      "checksum": "406b8d38f768a041ff6a6d474b7ad530"
+    },
+    "Example lectures from Statistics II/Lecture 6/data/driving.csv": {
+      "checksum": "419e6ddf91487b6fa25738e27f41dc08"
+    },
+    "Example lectures from Statistics II/Lecture 6/data/Exam Anxiety.dat": {
+      "checksum": "fbd57f95dfa32812f1809f7d99c5fffb"
+    },
+    "Example lectures from Statistics II/Lecture 6/images/homoscedasticitygood.png": {
+      "checksum": "3d6dd4b103de4ee9ec3615ad83104629"
+    },
+    "Example lectures from Statistics II/Lecture 6/images/lessgood.png": {
+      "checksum": "7de5ee6c599bfbb8bf4a7a052306cf15"
+    },
+    "Example lectures from Statistics II/Lecture 6/images/logo.png": {
+      "checksum": "c784a18f8817b64c372d02d533cd750a"
+    },
+    "Example lectures from Statistics II/Lecture 6/images/normalityresiduals.png": {
+      "checksum": "fdfc76f762cf6095ddc092879dc9c4d3"
+    },
+    "Example lectures from Statistics II/Lecture 6/images/outliersplot.png": {
+      "checksum": "3fd18070e94f2b824fe6810623cd7c2a"
+    },
+    "Example lectures from Statistics II/Lecture 6/images/pitchcoefficients.png": {
+      "checksum": "f8f517398d198ec6e40d1117b9f2aa73"
+    },
+    "Example lectures from Statistics II/Lecture 6/images/pitchcoefficients2.png": {
+      "checksum": "8f71d36447575e6d2e4d5c69d6f4bfb5"
+    },
+    "Example lectures from Statistics II/Lecture 6/images/preformancemodel.png": {
+      "checksum": "5649f6a7dd5a231d98fe7052196dbac8"
+    },
+    "Example lectures from Statistics II/Lecture 6/images/regressionline.png": {
+      "checksum": "2efaaa8a90b6af4f7867a5c135d6f57e"
+    },
+    "Example lectures from Statistics II/Lecture 6/images/residuals1.png": {
+      "checksum": "05ca57b49cd44f645fe9262dceebfe38"
+    },
+    "Example lectures from Statistics II/Lecture 6/images/residuals2.png": {
+      "checksum": "cabb92c78eac649738a2f2345754782e"
+    },
+    "Example lectures from Statistics II/Lecture 6/images/study1.png": {
+      "checksum": "8be721f3eed2bdc087829a0043e1d192"
+    },
+    "Example lectures from Statistics II/Lecture 6/images/study2.png": {
+      "checksum": "854c4b441958afb21ede2ef8edd4bb1e"
+    },
+    "Example lectures from Statistics II/Lecture 6/images/voicepitch.png": {
+      "checksum": "e18d5f3f3d68e5c772160894352dc4f2"
+    },
+    "Example lectures from Statistics II/Lecture 6/Lecture6.Rmd": {
+      "checksum": "044b8cb158867e5663400ffb51ac3ea0"
+    },
+    "Example lectures from Statistics II/Lecture 7/css/bootstrap.css": {
+      "checksum": "54cbb416d131e9b3b42706489283c754"
+    },
+    "Example lectures from Statistics II/Lecture 7/css/style.css": {
+      "checksum": "406b8d38f768a041ff6a6d474b7ad530"
+    },
+    "Example lectures from Statistics II/Lecture 7/data/Album Sales 2.dat": {
+      "checksum": "6a0a9e58b3680fc907c2826e3c5732c8"
+    },
+    "Example lectures from Statistics II/Lecture 7/data/desktop.ini": {
+      "checksum": "a0c7209d5c1a889c0f490763b9f5aba9"
+    },
+    "Example lectures from Statistics II/Lecture 7/images/albumsalesregression.png": {
+      "checksum": "ce5fec52cc80e4d7ed1dabd36da996f8"
+    },
+    "Example lectures from Statistics II/Lecture 7/images/effectsize.png": {
+      "checksum": "aabb53292c1fa52de300787e0c77993e"
+    },
+    "Example lectures from Statistics II/Lecture 7/images/ex8.png": {
+      "checksum": "d15cbc3c701f975d917f051607306324"
+    },
+    "Example lectures from Statistics II/Lecture 7/images/logo.png": {
+      "checksum": "c784a18f8817b64c372d02d533cd750a"
+    },
+    "Example lectures from Statistics II/Lecture 7/images/proportionpredict.png": {
+      "checksum": "5f483dec154db4929db53014148fde1d"
+    },
+    "Example lectures from Statistics II/Lecture 7/images/regressioncomic.png": {
+      "checksum": "559dab646b625d0a1007c232b69e4f32"
+    },
+    "Example lectures from Statistics II/Lecture 7/images/regressionline.png": {
+      "checksum": "2efaaa8a90b6af4f7867a5c135d6f57e"
+    },
+    "Example lectures from Statistics II/Lecture 7/images/tableacademic.png": {
+      "checksum": "0ae4b5259b3779a06dadcce5470af777"
+    },
+    "Example lectures from Statistics II/Lecture 7/images/visualizeregression.png": {
+      "checksum": "2bfbb7440c4097063e95226175793131"
+    },
+    "Example lectures from Statistics II/Lecture 7/Lecture7.Rmd": {
+      "checksum": "959e5ab62a40e86cfe2c686a6f65be8f"
+    },
+    "Example lectures from Statistics II/Lecture 8/css/bootstrap.css": {
+      "checksum": "54cbb416d131e9b3b42706489283c754"
+    },
+    "Example lectures from Statistics II/Lecture 8/css/style.css": {
+      "checksum": "406b8d38f768a041ff6a6d474b7ad530"
+    },
+    "Example lectures from Statistics II/Lecture 8/data/GPA.DATA.csv": {
+      "checksum": "6ad7d8e8f33807781725d0527d482d0d"
+    },
+    "Example lectures from Statistics II/Lecture 8/images/decomposemean.png": {
+      "checksum": "ac7e559697233317e655e3854a34724a"
+    },
+    "Example lectures from Statistics II/Lecture 8/images/decomposeprobe.png": {
+      "checksum": "413cd4c9e8525688296b725e75753557"
+    },
+    "Example lectures from Statistics II/Lecture 8/images/easyplot.png": {
+      "checksum": "521eb1f8eeb622891e1a9bd0c8fb9ff0"
+    },
+    "Example lectures from Statistics II/Lecture 8/images/interractionage.png": {
+      "checksum": "f892a095d8fb80e8351ef1478d919b55"
+    },
+    "Example lectures from Statistics II/Lecture 8/images/interractionsex.png": {
+      "checksum": "36d51ab8b2718bc70e313097153c11ed"
+    },
+    "Example lectures from Statistics II/Lecture 8/images/logo.png": {
+      "checksum": "c784a18f8817b64c372d02d533cd750a"
+    },
+    "Example lectures from Statistics II/Lecture 8/images/plotdata.png": {
+      "checksum": "e8ab795dfa95a6ed6e042eee79cb3af9"
+    },
+    "Example lectures from Statistics II/Lecture 8/images/slopeinterraction.png": {
+      "checksum": "a5890ef312f2d970330c20a742a06566"
+    },
+    "Example lectures from Statistics II/Lecture 8/Lecture 8 log.docx": {
+      "checksum": "c0f8487c94521b8c68e797450b453855"
+    },
+    "Example lectures from Statistics II/Lecture 8/lecture8.html": {
+      "checksum": "ee31253a45641f2545d0cd1f56001d92"
+    },
+    "Example lectures from Statistics II/Lecture 8/lecture8.Rmd": {
+      "checksum": "41a4a32bfacf5f531ae70f04cdb9e941"
+    },
+    "Example lectures from Statistics II/Lecture 8/lecture8_files/figure-html/Quiz1R-1.png": {
+      "checksum": "0648eedc2f622adce458b98735b1eaa1"
+    },
+    "Example lectures from Statistics II/Lecture 8/lecture8_files/figure-html/Quiz2R-1.png": {
+      "checksum": "b43909bc8f5345e6ebeb34687e354dc8"
+    },
+    "Example lectures from Statistics II/Lecture 8/lecture8_files/figure-html/Quiz3R-1.png": {
+      "checksum": "5e6f88ad9ae467acb4a00ac9fff81d05"
+    },
+    "Example lectures from Statistics II/Lecture 8/lecture8_files/figure-html/Quiz4R-1.png": {
+      "checksum": "5d030cc3c0c0f8c0b817b0d385682a77"
+    },
+    "Example lectures from Statistics II/Lecture 8/lecture8_files/figure-html/Quiz5R-1.png": {
+      "checksum": "c2ad50c2fb2112ca3c1ce914225b05c2"
+    },
+    "Example lectures from Statistics II/Lecture 8/student_progress.txt": {
+      "checksum": "0560e8dc13c00a4834be9512cb655f46"
+    },
+    "Example lectures from Statistics II/Lecture 9/css/bootstrap.css": {
+      "checksum": "54cbb416d131e9b3b42706489283c754"
+    },
+    "Example lectures from Statistics II/Lecture 9/css/style.css": {
+      "checksum": "406b8d38f768a041ff6a6d474b7ad530"
+    },
+    "Example lectures from Statistics II/Lecture 9/images/logo.png": {
+      "checksum": "c784a18f8817b64c372d02d533cd750a"
+    },
+    "Example lectures from Statistics II/Lecture 9/images/meme.png": {
+      "checksum": "7dbafe558cf55a664c8f02e0f80b7c29"
+    },
+    "Example lectures from Statistics II/Lecture 9/images/table8.2.1.png": {
+      "checksum": "d26b590948d23ca09386cefcc756a2fb"
+    },
+    "Example lectures from Statistics II/Lecture 9/images/table8.3.1.png": {
+      "checksum": "b273ff582cf5684627cd4bad3f760289"
+    },
+    "Example lectures from Statistics II/Lecture 9/images/table8.4.1.png": {
+      "checksum": "53f9194ba7a06a254c4bf2d07dd41e45"
+    },
+    "Example lectures from Statistics II/Lecture 9/images/table8.5.1.png": {
+      "checksum": "8e15fa9931592f4640127a7661d5a303"
+    },
+    "Example lectures from Statistics II/Lecture 9/images/tableexcel.png": {
+      "checksum": "055e8a705a8f92c1847673978dcf49a8"
+    },
+    "Example lectures from Statistics II/Lecture 9/lecture9.html": {
+      "checksum": "510452c0b04ee337ff9a7c5c5f70125f"
+    },
+    "Example lectures from Statistics II/Lecture 9/lecture9.Rmd": {
+      "checksum": "0afc80e77a32ed7f72524a9f182abe9a"
+    },
+    "README.md": {
+      "checksum": "7d439ab9ad7359ac4ec901c3d9a4df99"
+    },
+    "Templates/Lecture_Template.Rmd": {
+      "checksum": "5a481ebabc92415f40e6cac5020bda29"
+    },
+    "Templates/Quizzes with plots/css/bootstrap.css": {
+      "checksum": "54cbb416d131e9b3b42706489283c754"
+    },
+    "Templates/Quizzes with plots/css/style.css": {
+      "checksum": "406b8d38f768a041ff6a6d474b7ad530"
+    },
+    "Templates/Quizzes with plots/images/A.png": {
+      "checksum": "275f4ad099ad716d3e69e8bf203cfd73"
+    },
+    "Templates/Quizzes with plots/images/B.png": {
+      "checksum": "0063ac61a6689a94aa3a4f99d9663673"
+    },
+    "Templates/Quizzes with plots/images/C.png": {
+      "checksum": "4700989a14f3e850916f6601c831a672"
+    },
+    "Templates/Quizzes with plots/images/Heartrate_A.png": {
+      "checksum": "ce8f087df73948becb02bef2fbd4fbc2"
+    },
+    "Templates/Quizzes with plots/images/Heartrate_B.png": {
+      "checksum": "b9d7bd2d5c1154473541996cd9128e2d"
+    },
+    "Templates/Quizzes with plots/images/Heartrate_C.png": {
+      "checksum": "41112f96d891c0040c9f2f3163b0da36"
+    },
+    "Templates/Quizzes with plots/images/Heartrate_D.png": {
+      "checksum": "cb741c8614ddf86c2b2551f27837acf9"
+    },
+    "Templates/Quizzes with plots/images/logo.png": {
+      "checksum": "c784a18f8817b64c372d02d533cd750a"
+    },
+    "Templates/Quizzes with plots/images/neurons.jpg": {
+      "checksum": "236da4a842825aaeecbecb7af0f0e7e4"
+    },
+    "Templates/Quizzes with plots/images/sine-wave-change.png": {
+      "checksum": "2f7e54cfa0a9e0277aa13b32d0185bb8"
+    },
+    "Templates/Quizzes with plots/Quiz and plot templates.Rmd": {
+      "checksum": "c99189308176436114e6646e3e51be30"
+    },
+    "Templates/Quizzes without plots/css/bootstrap.css": {
+      "checksum": "54cbb416d131e9b3b42706489283c754"
+    },
+    "Templates/Quizzes without plots/css/style.css": {
+      "checksum": "406b8d38f768a041ff6a6d474b7ad530"
+    },
+    "Templates/Quizzes without plots/Quizzes.Rmd": {
+      "checksum": "4b1fd76115cb7b9fd177f660945961ed"
+    }
+  },
+  "users": null
+}
