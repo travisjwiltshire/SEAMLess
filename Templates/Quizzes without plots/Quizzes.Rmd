@@ -36,6 +36,9 @@ require(learnr)
 ## Global code chunk ptions
 knitr::opts_chunk$set(echo = TRUE) ## This is regarding showing code output
 tutorial_options(exercise.eval = FALSE, exercise.checker=FALSE) ## This is for checking code exercises, none are included in this file
+
+rsconnect::writeManifest()
+
 ```
 
 
@@ -563,3 +566,4 @@ question("When performing regression with a dummy coded categorical variable, th
     allow_retry = FALSE
     )
 ```
+
